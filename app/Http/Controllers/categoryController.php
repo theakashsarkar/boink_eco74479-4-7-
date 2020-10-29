@@ -19,7 +19,7 @@ class categoryController extends Controller
     public function saveCategory(Request $request)
     {
         $category = new category();
-        $category->category_name = $request->category_name;
+        $category->category_name        = $request->category_name;
         $category->category_description = $request->category_description;
         $category->publication_status   = $request->publication_status;
         $category->save();

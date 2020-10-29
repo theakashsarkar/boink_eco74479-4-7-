@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="{{ asset('/') }}admin/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <script src="//cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -206,7 +207,30 @@ to get the desired effect
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
-                Tables
+                Brand
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('add-brand') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Add-Brand</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('manage-brand') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>manage-brand</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Product
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -214,23 +238,18 @@ to get the desired effect
               <li class="nav-item">
                 <a href="pages/tables/simple.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
+                  <p>Add-product</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="pages/tables/data.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
+                  <p>manage-product</p>
                 </a>
               </li>
             </ul>
           </li>
+         
          
           
       </nav>
