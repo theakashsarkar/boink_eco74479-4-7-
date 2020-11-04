@@ -17,16 +17,6 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <script src="//cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
 </head>
-<!--
-BODY TAG OPTIONS:
-=================
-Apply one or more of the following classes to to the body tag
-to get the desired effect
-|---------------------------------------------------------|
-|LAYOUT OPTIONS | sidebar-collapse                        |
-|               | sidebar-mini                            |
-|---------------------------------------------------------|
--->
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
   <!-- Navbar -->
@@ -178,8 +168,8 @@ to get the desired effect
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            
-              
+
+
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
@@ -226,32 +216,31 @@ to get the desired effect
               </li>
             </ul>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Product
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/tables/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add-product</p>
+            <li class="nav-item has-treeview">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-table"></i>
+                    <p>
+                        Product
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>manage-product</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-         
-         
-          
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{{ route('add-product') }}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Add-product</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('manage-product') }}" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>manage-product</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -265,7 +254,6 @@ to get the desired effect
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard </h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">

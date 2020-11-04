@@ -61,10 +61,21 @@ Route::post('brand/save','BrandController@brandSave')                           
 
 Route::get('unpublished/brand/{id}','BrandController@unpublic')                       ->name('unpublic-status');
 
-Route::get('published/brand/{id}','BrandController@public')                           ->name('public-status'); 
+Route::get('published/brand/{id}','BrandController@public')                           ->name('public-status');
 
 Route::get('edit/brand/{id}', 'BrandController@editBrand')                            ->name('edit-brand');
 
 Route::get('delete/brand/{id}', 'BrandController@deleteBrand')                        ->name('delete-brand');
 
-Route::post('update/brand','BrandController@saveUpdateBrand')                         ->name('update-brand');   
+Route::post('update/brand','BrandController@saveUpdateBrand')                         ->name('update-brand');
+
+Route::get('add/product', 'ProductController@addProduct')                             ->name('add-product');
+
+Route::post('new/product','ProductController@saveProduct')                            ->name('new-product');
+
+Route::get('manage/product','ProductController@manageProduct')                        ->name('manage-product');
+
+Route::get('unpublished/product/{id}','ProductController@Unpublic')                   ->name('Unpublic');
+
+Route::get('public/product/{id}','ProductController@Public')                           ->name('Public');
+
