@@ -20,16 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df8b6a10-2db1-4b7c-b7dd-53927a51f299" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/Product/manage-product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/include/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BoinkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BoinkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/aria_log.00000001" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/aria_log.00000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/aria_log_control" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/aria_log_control" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ibtmp1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/Home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/Home/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +187,11 @@
       <option name="presentableId" value="Default" />
       <updated>1604404757903</updated>
       <workItem from="1604404759396" duration="16676000" />
-      <workItem from="1604503296128" duration="7217000" />
+      <workItem from="1604503296128" duration="7348000" />
+      <workItem from="1604555034465" duration="46000" />
+      <workItem from="1605237727796" duration="4984000" />
+      <workItem from="1605287979136" duration="2833000" />
+      <workItem from="1605326277272" duration="2211000" />
     </task>
     <servers />
   </component>
@@ -202,11 +208,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="777" y="479" width="360" height="142" key="NewPhpFileDialog" timestamp="1604504079003">
+    <state x="743" y="311" width="428" height="478" key="FileChooserDialogImpl" timestamp="1604555082802">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="777" y="479" width="360" height="142" key="NewPhpFileDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1604504079003" />
+    <state x="743" y="311" width="428" height="478" key="FileChooserDialogImpl/0.25.1920.1055@0.25.1920.1055" timestamp="1604555082802" />
+    <state x="777" y="479" width="360" height="142" key="NewPhpFileDialog" timestamp="1605298721980">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="777" y="479" width="360" height="142" key="NewPhpFileDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605298721980" />
   </component>
 </project>

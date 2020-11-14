@@ -77,5 +77,7 @@ Route::get('manage/product','ProductController@manageProduct')                  
 
 Route::get('unpublished/product/{id}','ProductController@Unpublic')                   ->name('Unpublic');
 
-Route::get('public/product/{id}','ProductController@Public')                           ->name('Public');
+Route::get('public/product/{id}','ProductController@Public')                          ->name('Public');
+
+Route::get('category/product/{id}','BoinkController@product')                         ->name('category-product');
 
