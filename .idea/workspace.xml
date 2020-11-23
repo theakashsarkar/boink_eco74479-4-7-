@@ -20,10 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df8b6a10-2db1-4b7c-b7dd-53927a51f299" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/include/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/include/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/mails/confirmation-mail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontEnd/shipping/shipping.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Boink_ecommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Boink_ecommerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BoinkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BoinkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/aria_log.00000001" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/aria_log.00000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/aria_log_control" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/aria_log_control" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ib_buffer_pool" afterDir="false" />
@@ -31,7 +39,11 @@
       <change beforePath="$PROJECT_DIR$/data/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/Home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/Home/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/include/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/include/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/pages/chckout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/pages/chckout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/pages/product-detailes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/pages/product-detailes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontEnd/pages/shop-carts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontEnd/pages/shop-carts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,6 +164,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/darryldecode/cart" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jmMLInhOY9Dq3JU6HW2JN5A2xb" />
@@ -192,6 +205,9 @@
       <workItem from="1605237727796" duration="4984000" />
       <workItem from="1605287979136" duration="2833000" />
       <workItem from="1605326277272" duration="2211000" />
+      <workItem from="1605490679034" duration="18496000" />
+      <workItem from="1605633877971" duration="44000" />
+      <workItem from="1606036304975" duration="24184000" />
     </task>
     <servers />
   </component>
@@ -211,13 +227,21 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="743" y="311" width="428" height="478" key="FileChooserDialogImpl" timestamp="1604555082802">
+    <state x="743" y="311" width="428" height="478" key="FileChooserDialogImpl" timestamp="1605633921838">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="743" y="311" width="428" height="478" key="FileChooserDialogImpl/0.25.1920.1055@0.25.1920.1055" timestamp="1604555082802" />
-    <state x="777" y="479" width="360" height="142" key="NewPhpFileDialog" timestamp="1605298721980">
+    <state x="743" y="311" width="428" height="478" key="FileChooserDialogImpl/0.25.1920.1055@0.25.1920.1055" timestamp="1605633921838" />
+    <state x="777" y="479" width="360" height="142" key="NewPhpFileDialog" timestamp="1606129182212">
       <screen x="0" y="25" width="1920" height="1055" />
     </state>
-    <state x="777" y="479" width="360" height="142" key="NewPhpFileDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1605298721980" />
+    <state x="777" y="479" width="360" height="142" key="NewPhpFileDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1606129182212" />
+    <state x="619" y="253" key="run.anything.popup" timestamp="1605533074432">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="619" y="253" key="run.anything.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1605533074432" />
+    <state x="620" y="256" width="672" height="678" key="search.everywhere.popup" timestamp="1605498796640">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="620" y="256" width="672" height="678" key="search.everywhere.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1605498796640" />
   </component>
 </project>

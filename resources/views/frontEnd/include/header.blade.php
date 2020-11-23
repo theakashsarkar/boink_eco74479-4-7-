@@ -10,7 +10,7 @@
                 <nav class="header__menu">
                     <ul>
                         @foreach($categories as $category)
-                            <li class="active"><a href="{{ route('category-product',['id' => $category->id]) }}">{{ $category->category_name }}</a></li>
+                            <li class="active"><a href="{{ route('category-product',['id' => $category->id, 'name' => $category->category_name]) }}">{{ $category->category_name }}</a></li>
                         @endforeach
                     </ul>
                 </nav>

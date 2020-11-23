@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Product;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function productDetails()
+    public function productDetails($id)
     {
-        return view('frontEnd.pages.product-detailes');
+        $product = Product::find($id);
+        return view('frontEnd.pages.product-detailes',['product'=>$product]);
     }
     public function shopCarts()
     {
@@ -22,7 +24,7 @@ class PagesController extends Controller
     {
         return view('frontEnd.pages.blog-details');
     }
- 
+
     public function contact()
     {
         return view('frontEnd.contact.contact');

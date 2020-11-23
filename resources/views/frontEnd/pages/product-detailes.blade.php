@@ -24,24 +24,23 @@
                     <div class="product__details__pic">
                         <div class="product__details__pic__left product__thumb nice-scroll">
                             <a class="pt active" href="#product-1">
-                                <img src="{{ asset('/') }}frontEnd/img/product/details/thumb-1.jpg" alt="">
+                                <img src="{{ asset($product->product_image)}}" alt="">
                             </a>
                             <a class="pt" href="#product-2">
-                                <img src="{{ asset('/') }}frontEnd/img/product/details/thumb-2.jpg" alt="">
+                                <img src="{{ asset($product->product_image) }}" alt="">
                             </a>
                             <a class="pt" href="#product-3">
-                                <img src="{{ asset('/') }}frontEnd/img/product/details/thumb-3.jpg" alt="">
+                                <img src="{{asset($product->product_image)}}" alt="">
                             </a>
                             <a class="pt" href="#product-4">
-                                <img src="{{ asset('/') }}frontEnd/img/product/details/thumb-4.jpg" alt="">
+                                <img src="{{asset($product->product_image)}}" alt="">
                             </a>
                         </div>
                         <div class="product__details__slider__content">
                             <div class="product__details__pic__slider owl-carousel">
-                                <img data-hash="product-1" class="product__big__img" src="{{ asset('/') }}frontEnd/img/product/details/product-1.jpg" alt="">
-                                <img data-hash="product-2" class="product__big__img" src="{{ asset('/') }}frontEnd/img/product/details/product-3.jpg" alt="">
-                                <img data-hash="product-3" class="product__big__img" src="{{ asset('/') }}frontEnd/img/product/details/product-2.jpg" alt="">
-                                <img data-hash="product-4" class="product__big__img" src="{{ asset('/') }}frontEnd/img/product/details/product-4.jpg" alt="">
+                                @for( $i = 0; $i <= 4; $i++)
+                                <img data-hash="product-1" class="product__big__img" src="{{asset($product->product_image)}}" alt="">
+                                @endfor
                             </div>
                         </div>
                     </div>
@@ -57,21 +56,23 @@
                             <i class="fa fa-star"></i>
                             <span>( 138 reviews )</span>
                         </div>
-                        <div class="product__details__price">$ 75.0 <span>$ 83.0</span></div>
-                        <p>Nemo enim ipsam voluptatem quia aspernatur aut odit aut loret fugit, sed quia consequuntur
-                        magni lores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <div class="product__details__price">TK. {{ $product->product_price }} </div>
+                        <p>{{ $product->short_description  }}</p>
                         <div class="product__details__button">
+                            {{ Form::open(['route'=> 'add-to-cart', 'method'=>'POST']) }}
                             <div class="quantity">
                                 <span>Quantity:</span>
                                 <div class="pro-qty">
-                                    <input type="text" value="1">
+                                    <input type="number" value="1" name="qty" min="1"/>
+                                    <input type="hidden" name="id" value="{{ $product->id }}">
                                 </div>
                             </div>
-                            <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                            <input type="submit" class="cart-btn" name="btn" value="Add to cart">
                             <ul>
                                 <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                                 <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>
                             </ul>
+                            {{ Form::close() }}
                         </div>
                         <div class="product__details__widget">
                             <ul>

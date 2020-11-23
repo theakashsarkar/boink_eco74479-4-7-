@@ -21,7 +21,7 @@ Route::get( '/', [
 ] );
 Route::get('/shop',            'BoinkController@shop' )                               ->name('shop');
 
-Route::get('/product-details','PagesController@productDetails' )                      ->name('product-details');
+Route::get('/product-details/{id}/{name}','PagesController@productDetails' )          ->name('product-details');
 
 Route::get('/shop-cart',      'PagesController@shopCarts' )                           ->name('shop-cart');
 
@@ -79,5 +79,20 @@ Route::get('unpublished/product/{id}','ProductController@Unpublic')             
 
 Route::get('public/product/{id}','ProductController@Public')                          ->name('Public');
 
-Route::get('category/product/{id}','BoinkController@product')                         ->name('category-product');
+Route::get('category/product/{id}/{name}','BoinkController@product')                  ->name('category-product');
 
+Route::Post('add/to/cart','CartController@addToCart')                                 ->name('add-to-cart');
+
+Route::get('cart/show','CartController@showCart')                                     ->name('show-cart');
+
+Route::get('delete/card/item/{id}','CartController@deleteCard')                       ->name('delete-card-item');
+
+Route::Post('update/cart/quantity','CartController@updateCart')                       ->name('update-cart');
+
+Route::get('product/checkout','CheckoutController@checkout')                          ->name('checkout');
+
+Route::POST('customer/signup','CheckoutController@signup')                            ->name('registration');
+
+Route::get('customer/login','CheckoutController@login')                               ->name('login');
+
+Route::get('customer/shipping','CheckoutController@shippingFrom')                     ->name('shipping');
